@@ -1,5 +1,20 @@
 model_year: 2024
 supported_commands_by_ecu:
+  7DF:
+  - 7DF.0101
+  - 7DF.010D
+  - 7DF.0121
+  - 7DF.0130
+  - 7DF.0131
+  - 7DF.0141
+  - 7DF.0142
+  - 7DF.0146
+  - 7DF.014D
+  - 7DF.014E
+  - 7DF.015B
+  - 7DF.019A
+  - 7DF.01A6
+  - 7DF.01D2
   7E2:
   - 010D:VSS
   - 011C:OBDSUP
