@@ -82,7 +82,7 @@ unsupported_commands_by_ecu:
   - 7B0.7B8.221029|t=64,fc=1:SUBARU_STEER_ANGLE
   "7E0":
   - 7E0.220005
-  - 7E0.7E8.22002F|t=64,fc=1:SUBARU_FLI
+  - 7E0.7E8.22002F|t=64,fc=1:SUBARU_FLI_V3
   - 7E0.7E8.2210E5|t=64,fc=1:SUBARU_ODO
   "7E2":
   - 7E2.7EA.010D
