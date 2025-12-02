@@ -1,14 +1,28 @@
 model_year: 2023
 supported_commands_by_ecu:
+  "745":
+  - 745.74D.221739
+  "747":
+  - 747.74F.220103
+  - 747.74F.22182E
+  "7D2":
+  - 7D2.7DA.22106C
+  - 7D2.7DA.221F0D
+  - 7D2.7DA.221F5B
   "7DF":
   - 7DF.0101
+  - 7DF.0104
   - 7DF.010D
+  - 7DF.0111
   - 7DF.011C
+  - 7DF.011F
   - 7DF.0121
   - 7DF.0130
   - 7DF.0131
   - 7DF.0142
   - 7DF.0146
+  - 7DF.0149
+  - 7DF.014A
   - 7DF.014D
   - 7DF.014E
   - 7DF.015B
@@ -65,6 +79,10 @@ supported_commands_by_ecu:
 unsupported_commands_by_ecu:
   "746":
   - 746.221032:SUBARU_STEER_ANGLE_746
+  "750":
+  - 750.758.221004
+  - 750.758.221005
+  - 750.758.222021
   "753":
   - 753.75B.221022|t=64,fc=1:SUBARU_TP_FL,SUBARU_TP_FR,SUBARU_TP_RL,SUBARU_TP_RR
   - 753.75B.221028|t=64,fc=1:SUBARU_TID1,SUBARU_TID2,SUBARU_TID3,SUBARU_TID4
@@ -212,6 +230,8 @@ unsupported_commands_by_ecu:
   - 7E2.7EA.0121
   - 7E2.7EA.0142
   - 7E2.7EA.0146
+  - 7E2.7EA.0149
+  - 7E2.7EA.014A
   - 7E2.7EA.019A
   "7E3":
   - 7E3.7EB.0101
@@ -232,7 +252,10 @@ unsupported_commands_by_ecu:
   - 7E3.7EB.221143
   "7E6":
   - 7E6.7EE.0101
+  - 7E6.7EE.0104
+  - 7E6.7EE.0105
   - 7E6.7EE.010D
+  - 7E6.7EE.0111
   - 7E6.7EE.011F
   - 7E6.7EE.0121
   - 7E6.7EE.0130
