@@ -1,0 +1,8 @@
+command_id: 747.74F.220103|fc=1
+test_cases:
+- expected_values:
+    SUB_EV_ODO: 23907
+  response: 74F0762010301005D63
+- expected_values:
+    SUB_EV_ODO: 23957
+  response: 74F0762010301005D95

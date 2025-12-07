@@ -1,0 +1,10 @@
+command_id: 750.758.222021|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    SUB_EV_TID_FL: RL
+    SUB_EV_TID_FR: FL
+    SUB_EV_TID_RL: RR
+    SUB_EV_TID_RR: FR
+  response: |-
+    7582A10086220210301
+    7582A21040200000000

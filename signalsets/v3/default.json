@@ -1,4 +1,171 @@
 { "commands": [
-
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5,
+  "signals": [
+    {"id": "SUB_EV_TT_FR", "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front right tire temperature"},
+    {"id": "SUB_EV_TT_FL", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front left tire temperature"},
+    {"id": "SUB_EV_TT_RR", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear right tire temperature"},
+    {"id": "SUB_EV_TT_RL", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear left tire temperature"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1005"}, "freq": 5,
+  "signals": [
+    {"id": "SUB_EV_TP_RL", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "SUB_EV_TP_FL", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "SUB_EV_TP_RR", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "SUB_EV_TP_FR", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400,
+  "signals": [
+    {"id": "SUB_EV_TID_FL", "path": "Tires", "name": "Front left tire position", "fmt": {"len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "SUB_EV_TID_FR", "path": "Tires", "name": "Front right tire position", "fmt": {"bix": 8, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "SUB_EV_TID_RL", "path": "Tires", "name": "Rear left tire position", "fmt": {"bix": 16, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    },
+    {"id": "SUB_EV_TID_RR", "path": "Tires", "name": "Rear right tire position", "fmt": {"bix": 24, "len": 8, "map": {
+          "1": { "description": "Front left",  "value": "FL" },
+          "2": { "description": "Front right", "value": "FR" },
+          "3": { "description": "Rear left",   "value": "RL" },
+          "4": { "description": "Rear right",  "value": "RR" }
+        }}
+    }
+  ]},
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1739"}, "freq": 1,
+  "signals": [
+    {"id": "SUB_EV_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10,
+  "signals": [
+    {"id": "SUB_EV_ODO", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "miles" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "182E"}, "freq": 1,
+  "signals": [
+    {"id": "SUB_EV_HVBAT_ECU01_VOLT", "path": "Battery.Modules.01", "fmt": {           "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 01 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU02_VOLT", "path": "Battery.Modules.02", "fmt": {"bix": 16, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 02 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU03_VOLT", "path": "Battery.Modules.03", "fmt": {"bix": 32, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 03 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU04_VOLT", "path": "Battery.Modules.04", "fmt": {"bix": 48, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 04 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU05_VOLT", "path": "Battery.Modules.05", "fmt": {"bix": 64, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 05 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU06_VOLT", "path": "Battery.Modules.06", "fmt": {"bix": 80, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 06 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU07_VOLT", "path": "Battery.Modules.07", "fmt": {"bix": 96, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 07 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU08_VOLT", "path": "Battery.Modules.08", "fmt": {"bix": 112, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 08 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU09_VOLT", "path": "Battery.Modules.09", "fmt": {"bix": 128, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 09 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU10_VOLT", "path": "Battery.Modules.10", "fmt": {"bix": 144, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 10 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU11_VOLT", "path": "Battery.Modules.11", "fmt": {"bix": 160, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 11 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU12_VOLT", "path": "Battery.Modules.12", "fmt": {"bix": 176, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 12 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU13_VOLT", "path": "Battery.Modules.13", "fmt": {"bix": 192, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 13 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU14_VOLT", "path": "Battery.Modules.14", "fmt": {"bix": 208, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 14 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU15_VOLT", "path": "Battery.Modules.15", "fmt": {"bix": 224, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 15 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU16_VOLT", "path": "Battery.Modules.16", "fmt": {"bix": 240, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 16 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU17_VOLT", "path": "Battery.Modules.17", "fmt": {"bix": 256, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 17 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU18_VOLT", "path": "Battery.Modules.18", "fmt": {"bix": 272, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 18 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU19_VOLT", "path": "Battery.Modules.19", "fmt": {"bix": 288, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 19 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU20_VOLT", "path": "Battery.Modules.20", "fmt": {"bix": 304, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 20 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU21_VOLT", "path": "Battery.Modules.21", "fmt": {"bix": 320, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 21 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU22_VOLT", "path": "Battery.Modules.22", "fmt": {"bix": 336, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 22 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU23_VOLT", "path": "Battery.Modules.23", "fmt": {"bix": 352, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 23 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU24_VOLT", "path": "Battery.Modules.24", "fmt": {"bix": 368, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 24 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU25_VOLT", "path": "Battery.Modules.25", "fmt": {"bix": 384, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 25 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU26_VOLT", "path": "Battery.Modules.26", "fmt": {"bix": 400, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 26 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU27_VOLT", "path": "Battery.Modules.27", "fmt": {"bix": 416, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 27 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU28_VOLT", "path": "Battery.Modules.28", "fmt": {"bix": 432, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 28 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU29_VOLT", "path": "Battery.Modules.29", "fmt": {"bix": 448, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 29 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU30_VOLT", "path": "Battery.Modules.30", "fmt": {"bix": 464, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 30 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU31_VOLT", "path": "Battery.Modules.31", "fmt": {"bix": 480, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 31 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU32_VOLT", "path": "Battery.Modules.32", "fmt": {"bix": 496, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 32 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU33_VOLT", "path": "Battery.Modules.33", "fmt": {"bix": 512, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 33 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU34_VOLT", "path": "Battery.Modules.34", "fmt": {"bix": 528, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 34 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU35_VOLT", "path": "Battery.Modules.35", "fmt": {"bix": 544, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 35 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU36_VOLT", "path": "Battery.Modules.36", "fmt": {"bix": 560, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 36 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU37_VOLT", "path": "Battery.Modules.37", "fmt": {"bix": 576, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 37 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU38_VOLT", "path": "Battery.Modules.38", "fmt": {"bix": 592, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 38 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU39_VOLT", "path": "Battery.Modules.39", "fmt": {"bix": 608, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 39 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU40_VOLT", "path": "Battery.Modules.40", "fmt": {"bix": 624, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 40 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU41_VOLT", "path": "Battery.Modules.41", "fmt": {"bix": 640, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 41 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU42_VOLT", "path": "Battery.Modules.42", "fmt": {"bix": 656, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 42 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU43_VOLT", "path": "Battery.Modules.43", "fmt": {"bix": 672, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 43 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU44_VOLT", "path": "Battery.Modules.44", "fmt": {"bix": 688, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 44 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU45_VOLT", "path": "Battery.Modules.45", "fmt": {"bix": 704, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 45 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU46_VOLT", "path": "Battery.Modules.46", "fmt": {"bix": 720, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 46 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU47_VOLT", "path": "Battery.Modules.47", "fmt": {"bix": 736, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 47 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU48_VOLT", "path": "Battery.Modules.48", "fmt": {"bix": 752, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 48 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU49_VOLT", "path": "Battery.Modules.49", "fmt": {"bix": 768, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 49 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU50_VOLT", "path": "Battery.Modules.50", "fmt": {"bix": 784, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 50 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU51_VOLT", "path": "Battery.Modules.51", "fmt": {"bix": 800, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 51 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU52_VOLT", "path": "Battery.Modules.52", "fmt": {"bix": 816, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 52 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU53_VOLT", "path": "Battery.Modules.53", "fmt": {"bix": 832, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 53 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU54_VOLT", "path": "Battery.Modules.54", "fmt": {"bix": 848, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 54 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU55_VOLT", "path": "Battery.Modules.55", "fmt": {"bix": 864, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 55 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU56_VOLT", "path": "Battery.Modules.56", "fmt": {"bix": 880, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 56 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU57_VOLT", "path": "Battery.Modules.57", "fmt": {"bix": 896, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 57 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU58_VOLT", "path": "Battery.Modules.58", "fmt": {"bix": 912, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 58 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU59_VOLT", "path": "Battery.Modules.59", "fmt": {"bix": 928, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 59 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU60_VOLT", "path": "Battery.Modules.60", "fmt": {"bix": 944, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 60 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU61_VOLT", "path": "Battery.Modules.61", "fmt": {"bix": 960, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 61 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU62_VOLT", "path": "Battery.Modules.62", "fmt": {"bix": 976, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 62 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU63_VOLT", "path": "Battery.Modules.63", "fmt": {"bix": 992, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 63 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU64_VOLT", "path": "Battery.Modules.64", "fmt": {"bix": 1008, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 64 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU65_VOLT", "path": "Battery.Modules.65", "fmt": {"bix": 1024, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 65 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU66_VOLT", "path": "Battery.Modules.66", "fmt": {"bix": 1040, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 66 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU67_VOLT", "path": "Battery.Modules.67", "fmt": {"bix": 1056, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 67 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU68_VOLT", "path": "Battery.Modules.68", "fmt": {"bix": 1072, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 68 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU69_VOLT", "path": "Battery.Modules.69", "fmt": {"bix": 1088, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 69 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU70_VOLT", "path": "Battery.Modules.70", "fmt": {"bix": 1104, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 70 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU71_VOLT", "path": "Battery.Modules.71", "fmt": {"bix": 1120, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 71 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU72_VOLT", "path": "Battery.Modules.72", "fmt": {"bix": 1136, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 72 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU73_VOLT", "path": "Battery.Modules.73", "fmt": {"bix": 1152, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 73 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU74_VOLT", "path": "Battery.Modules.74", "fmt": {"bix": 1168, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 74 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU75_VOLT", "path": "Battery.Modules.75", "fmt": {"bix": 1184, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 75 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU76_VOLT", "path": "Battery.Modules.76", "fmt": {"bix": 1200, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 76 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU77_VOLT", "path": "Battery.Modules.77", "fmt": {"bix": 1216, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 77 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU78_VOLT", "path": "Battery.Modules.78", "fmt": {"bix": 1232, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 78 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU79_VOLT", "path": "Battery.Modules.79", "fmt": {"bix": 1248, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 79 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU80_VOLT", "path": "Battery.Modules.80", "fmt": {"bix": 1264, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 80 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU81_VOLT", "path": "Battery.Modules.81", "fmt": {"bix": 1280, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 81 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU82_VOLT", "path": "Battery.Modules.82", "fmt": {"bix": 1296, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 82 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU83_VOLT", "path": "Battery.Modules.83", "fmt": {"bix": 1312, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 83 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU84_VOLT", "path": "Battery.Modules.84", "fmt": {"bix": 1328, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 84 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU85_VOLT", "path": "Battery.Modules.85", "fmt": {"bix": 1344, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 85 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU86_VOLT", "path": "Battery.Modules.86", "fmt": {"bix": 1360, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 86 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU87_VOLT", "path": "Battery.Modules.87", "fmt": {"bix": 1376, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 87 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU88_VOLT", "path": "Battery.Modules.88", "fmt": {"bix": 1392, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 88 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU89_VOLT", "path": "Battery.Modules.89", "fmt": {"bix": 1408, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 89 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU90_VOLT", "path": "Battery.Modules.90", "fmt": {"bix": 1424, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 90 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU91_VOLT", "path": "Battery.Modules.91", "fmt": {"bix": 1440, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 91 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU92_VOLT", "path": "Battery.Modules.92", "fmt": {"bix": 1456, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 92 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU93_VOLT", "path": "Battery.Modules.93", "fmt": {"bix": 1472, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 93 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU94_VOLT", "path": "Battery.Modules.94", "fmt": {"bix": 1488, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 94 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU95_VOLT", "path": "Battery.Modules.95", "fmt": {"bix": 1504, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 95 voltage"},
+    {"id": "SUB_EV_HVBAT_ECU96_VOLT", "path": "Battery.Modules.96", "fmt": {"bix": 1520, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 96 voltage"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106C"}, "freq": 5,
+  "signals": [
+    {"id": "SUB_EV_HVBAT_SOC_TRIP_MAX", "path": "Battery.Trip", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge (trip max)"},
+    {"id": "SUB_EV_HVBAT_SOC_TRIP_MIN", "path": "Battery.Trip", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "HV battery charge (trip min)"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25,
+  "signals": [
+    {"id": "SUB_EV_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 1,
+  "signals": [
+    {"id": "SUB_EV_HVBAT_SOC_BMS", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
+  ]}
+],
+"signalGroups": [
+  {"id": "SUB_EV_HVBAT_ECU_VOLT", "path": "Battery.Modules", "matchingRegex": "SUB_EV_HVBAT_(ECU\\d+)_VOLT", "name": "HV battery pack voltage", "suggestedMetricGroup": "batteryModulesVoltage"}
 ]
 }

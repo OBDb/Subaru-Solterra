@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.22106C|fc=1
+test_cases:
+- expected_values:
+    SUB_EV_HVBAT_SOC_TRIP_MAX: 65.5
+    SUB_EV_HVBAT_SOC_TRIP_MIN: 60.5
+  response: 7DA0662106C828379
+- expected_values:
+    SUB_EV_HVBAT_SOC_TRIP_MAX: 65.5
+    SUB_EV_HVBAT_SOC_TRIP_MIN: 63.0
+  response: 7DA0662106C82837E
+- expected_values:
+    SUB_EV_HVBAT_SOC_TRIP_MAX: 59.0
+    SUB_EV_HVBAT_SOC_TRIP_MIN: 59.0
+  response: 7DA0662106C767676

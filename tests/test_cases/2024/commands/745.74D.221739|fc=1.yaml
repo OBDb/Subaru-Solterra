@@ -1,0 +1,8 @@
+command_id: 745.74D.221739|fc=1
+test_cases:
+- expected_values:
+    SUB_EV_HVBAT_SOC: 0
+  response: 74D0462173900
+- expected_values:
+    SUB_EV_HVBAT_SOC: 87
+  response: 74D0462173957

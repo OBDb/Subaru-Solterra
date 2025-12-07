@@ -1,0 +1,42 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    SUB_EV_TT_FR: 6
+    SUB_EV_TT_FL: 7
+    SUB_EV_TT_RR: 6
+    SUB_EV_TT_RL: 6
+  response: |-
+    7582A10086210042E2F
+    7582A212E2E00000000
+- expected_values:
+    SUB_EV_TT_FR: 7
+    SUB_EV_TT_FL: 7
+    SUB_EV_TT_RR: 5
+    SUB_EV_TT_RL: 6
+  response: |-
+    7582A10086210042F2F
+    7582A212D2E00000000
+- expected_values:
+    SUB_EV_TT_FR: 7
+    SUB_EV_TT_FL: 7
+    SUB_EV_TT_RR: 6
+    SUB_EV_TT_RL: 6
+  response: |-
+    7582A10086210042F2F
+    7582A212E2E00000000
+- expected_values:
+    SUB_EV_TT_FR: 7
+    SUB_EV_TT_FL: 8
+    SUB_EV_TT_RR: 6
+    SUB_EV_TT_RL: 6
+  response: |-
+    7582A10086210042F30
+    7582A212E2E00000000
+- expected_values:
+    SUB_EV_TT_FR: 7
+    SUB_EV_TT_FL: 8
+    SUB_EV_TT_RR: 6
+    SUB_EV_TT_RL: 7
+  response: |-
+    7582A10086210042F30
+    7582A212E2F00000000
