@@ -220,6 +220,7 @@ unsupported_commands_by_ecu:
   "7E6":
   - 7E6.7EE.0101
   - 7E6.7EE.0104
+  - 7E6.7EE.0105
   - 7E6.7EE.010D
   - 7E6.7EE.0111
   - 7E6.7EE.0121
