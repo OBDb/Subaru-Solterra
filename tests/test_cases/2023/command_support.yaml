@@ -9,6 +9,7 @@ supported_commands_by_ecu:
   - 7B0.7B8.2210A2
   "7D2":
   - 7D2.7DA.22106C
+  - 7D2.7DA.22141E
   - 7D2.7DA.221F0D
   - 7D2.7DA.221F5B
   "7DF":
