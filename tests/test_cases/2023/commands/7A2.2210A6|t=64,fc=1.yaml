@@ -1,0 +1,5 @@
+command_id: 7A2.2210A6|t=64,fc=1
+test_cases:
+- expected_values:
+    SUBARU_ACC_POS: 18.43137
+  response: 7DA066210A62F3337
