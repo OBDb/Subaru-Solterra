@@ -1,0 +1,5 @@
+command_id: 7D2.7DA.2215F7
+test_cases:
+- expected_values:
+    SOLTERRA_12V_C: 0.50744
+  response: 7DA056215F78085

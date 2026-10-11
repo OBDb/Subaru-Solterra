@@ -1,7 +1,7 @@
 command_id: 7A2.7AA.2210A1
 test_cases:
 - expected_values:
-    SUBARU_MAF_VOLTAGE: 0
+    SOLTERRA_7A2_10A1_RAW: 0
   response: |-
     7AA102B6210A1000191
     7AA21F4000079E00001

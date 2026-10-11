@@ -1,0 +1,6 @@
+command_id: 7D2.7DA.2210A6
+test_cases:
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 15
+    SOLTERRA_RM_INVRT_COOL_T: 7
+  response: 7DA066210A62F3337

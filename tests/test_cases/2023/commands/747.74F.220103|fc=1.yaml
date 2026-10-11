@@ -1,0 +1,11 @@
+command_id: 747.74F.220103|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_ODO: 10680
+  response: 74F07620103020029B8
+- expected_values:
+    SOLTERRA_ODO: 15357
+  response: 74F0762010302003BFD
+- expected_values:
+    SOLTERRA_ODO: 15873
+  response: 74F0762010302003E01

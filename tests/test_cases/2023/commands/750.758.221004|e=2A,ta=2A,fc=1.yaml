@@ -1,0 +1,82 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_TT_1: -2
+    SOLTERRA_TT_2: -1
+    SOLTERRA_TT_3: -2
+    SOLTERRA_TT_4: -1
+  response: |-
+    7582A10086210042627
+    7582A21262700000000
+- expected_values:
+    SOLTERRA_TT_1: 8
+    SOLTERRA_TT_2: 8
+    SOLTERRA_TT_3: 8
+    SOLTERRA_TT_4: 8
+  response: |-
+    7582A10086210043030
+    7582A21303000000000
+- expected_values:
+    SOLTERRA_TT_1: 9
+    SOLTERRA_TT_2: 8
+    SOLTERRA_TT_3: 8
+    SOLTERRA_TT_4: 8
+  response: |-
+    7582A10086210043130
+    7582A21303000000000
+- expected_values:
+    SOLTERRA_TT_1: 9
+    SOLTERRA_TT_2: 9
+    SOLTERRA_TT_3: 8
+    SOLTERRA_TT_4: 8
+  response: |-
+    7582A10086210043131
+    7582A21303000000000
+- expected_values:
+    SOLTERRA_TT_1: 10
+    SOLTERRA_TT_2: 9
+    SOLTERRA_TT_3: 9
+    SOLTERRA_TT_4: 9
+  response: |-
+    7582A10086210043231
+    7582A21313100000000
+- expected_values:
+    SOLTERRA_TT_1: 11
+    SOLTERRA_TT_2: 11
+    SOLTERRA_TT_3: 10
+    SOLTERRA_TT_4: 10
+  response: |-
+    7582A10086210043333
+    7582A21323200000000
+- expected_values:
+    SOLTERRA_TT_1: 12
+    SOLTERRA_TT_2: 11
+    SOLTERRA_TT_3: 10
+    SOLTERRA_TT_4: 10
+  response: |-
+    7582A10086210043433
+    7582A21323200000000
+- expected_values:
+    SOLTERRA_TT_1: 12
+    SOLTERRA_TT_2: 11
+    SOLTERRA_TT_3: 11
+    SOLTERRA_TT_4: 10
+  response: |-
+    7582A10086210043433
+    7582A21333200000000
+- expected_values:
+    SOLTERRA_TT_1: 18
+    SOLTERRA_TT_2: 17
+    SOLTERRA_TT_3: 17
+    SOLTERRA_TT_4: 15
+  response: |-
+    7582A10086210043A39
+    7582A21393700000000
+- expected_values:
+    SOLTERRA_TT_1: 18
+    SOLTERRA_TT_2: 17
+    SOLTERRA_TT_3: 17
+    SOLTERRA_TT_4: 16
+  response: |-
+    7582A10086210043A39
+    7582A21393800000000
