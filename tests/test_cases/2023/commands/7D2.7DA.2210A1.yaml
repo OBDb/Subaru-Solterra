@@ -1,0 +1,8 @@
+command_id: 7D2.7DA.2210A1
+test_cases:
+- expected_values:
+    SOLTERRA_RPM: 0
+    SOLTERRA_TQ: 0
+  response: |-
+    7DA100C6210A1800080
+    7DA2100020080000400

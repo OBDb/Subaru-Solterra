@@ -1,0 +1,18 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_TT_1: 3
+    SOLTERRA_TT_2: 2
+    SOLTERRA_TT_3: 2
+    SOLTERRA_TT_4: 3
+  response: |-
+    7582A10086210042B2A
+    7582A212A2B00000000
+- expected_values:
+    SOLTERRA_TT_1: 12
+    SOLTERRA_TT_2: 12
+    SOLTERRA_TT_3: 12
+    SOLTERRA_TT_4: 13
+  response: |-
+    7582A10086210043434
+    7582A21343500000000

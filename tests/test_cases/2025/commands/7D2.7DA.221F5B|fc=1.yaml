@@ -1,0 +1,20 @@
+command_id: 7D2.7DA.221F5B|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 18.82353
+  response: 7DA04621F5B30
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 23.52941
+  response: 7DA04621F5B3C
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 23.92157
+  response: 7DA04621F5B3D
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 24.70588
+  response: 7DA04621F5B3F
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 25.09804
+  response: 7DA04621F5B40
+- expected_values:
+    SOLTERRA_HVBAT_SOC: 72.15686
+  response: 7DA04621F5BB8

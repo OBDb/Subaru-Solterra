@@ -1,0 +1,26 @@
+command_id: 747.74F.220103|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_ODO: 1913
+  response: 74F0762010302000779
+- expected_values:
+    SOLTERRA_ODO: 1914
+  response: 74F076201030200077A
+- expected_values:
+    SOLTERRA_ODO: 1915
+  response: 74F076201030200077B
+- expected_values:
+    SOLTERRA_ODO: 1916
+  response: 74F076201030200077C
+- expected_values:
+    SOLTERRA_ODO: 1917
+  response: 74F076201030200077D
+- expected_values:
+    SOLTERRA_ODO: 1918
+  response: 74F076201030200077E
+- expected_values:
+    SOLTERRA_ODO: 1919
+  response: 74F076201030200077F
+- expected_values:
+    SOLTERRA_ODO: 2107
+  response: 74F076201030200083B
