@@ -1,0 +1,6 @@
+command_id: 745.74D.22161E|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CHGR_OUT_P: 0
+    SOLTERRA_CHGR_OUT_P_TGT: 0
+  response: 74D0762161E00000000

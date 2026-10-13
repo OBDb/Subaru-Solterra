@@ -1,0 +1,5 @@
+command_id: 745.74D.2210D1|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CTRL_MODE: DRIVING
+  response: 74D046210D101

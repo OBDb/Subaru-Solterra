@@ -1,0 +1,5 @@
+command_id: 745.74D.22106E|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_HVAC_P_745: 0
+  response: 74D0462106E00
