@@ -1,0 +1,5 @@
+command_id: 745.74D.221666|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_HLC: 255
+  response: 74D04621666FF

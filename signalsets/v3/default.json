@@ -1,9 +1,9 @@
 { "commands": [
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "106E"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "106E"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_HVAC_P_745", "path": "Climate", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Climate power, charging control"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "10D1"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "10D1"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CTRL_MODE", "path": "Battery", "name": "Control system mode", "fmt": {"len": 8, "map": {
           "0": { "description": "None",     "value": "NONE" },
@@ -12,11 +12,11 @@
         }}
     }
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "10D4"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "10D4"}, "freq": 5, "dbgfilter": { "from": 2025 },
   "signals": [
     {"id": "SOLTERRA_CHG_P", "path": "Battery", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilowatts" }, "name": "Battery charging power"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1619"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1619"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AC_P_TGT",   "path": "Battery", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilowatts" }, "name": "AC target power"},
     {"id": "SOLTERRA_AC_A_LIMIT", "path": "Battery", "fmt": {"bix": 24, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "amps"      }, "name": "AC current limit"},
@@ -28,7 +28,7 @@
         }}
     }
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "161C"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "161C"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_V_TYPE", "path": "Battery", "name": "Charger supply voltage type", "fmt": {"len": 8, "map": {
           "0": { "description": "None",        "value": "NONE" },
@@ -37,60 +37,60 @@
         }}
     }
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "161D"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "161D"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_IN_P", "path": "Battery", "fmt": { "len": 16, "max": 327.675, "div": 200, "unit": "kilowatts" }, "name": "Charger input power"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "161E"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "161E"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHGR_OUT_P",     "path": "Battery", "fmt": {           "len": 16, "max": 327.675, "div": 200, "unit": "kilowatts" }, "name": "Charger output power"},
     {"id": "SOLTERRA_CHGR_OUT_P_TGT", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 327.675, "div": 200, "unit": "kilowatts" }, "name": "Charger output power, target"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1625"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1625"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_LID", "path": "Doors", "fmt": {"bix": 14, "len": 1, "max": 1, "unit": "noyes" }, "name": "Charging lid open"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1665"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1665"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AC_P_USABLE", "path": "Battery", "fmt": { "len": 8, "max": 2.55, "div": 100, "unit": "kilowatts" }, "name": "AC usable power"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1666"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1666"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_HLC", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "DC high level communication state"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1667"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1667"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_STOP_REQ", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Charge stop request code"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1669"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1669"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_PISW", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Plug-in switch status"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "166A"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "166A"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_DC_STA_P_MAX", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "kilowatts" }, "name": "DC charger maximum power"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "166B"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "166B"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_DC_STA_V", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "volts" }, "name": "DC charger present voltage"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "166C"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "166C"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_DC_STA_A", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "amps" }, "name": "DC charger present current"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "166D"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "166D"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_A_TGT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "amps" }, "name": "Target charging current"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1679"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1679"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_DC_STA_A_MAX", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "amps" }, "name": "DC charger maximum current"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1681"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1681"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_DC_STA_V_MAX", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "volts" }, "name": "DC charger maximum voltage"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1684"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1684"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AC_OP", "path": "Battery", "name": "AC charging operation status", "fmt": {"len": 8, "map": {
           "0": { "description": "Stopped",     "value": "STOP" },
@@ -100,19 +100,19 @@
         }}
     }
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1688"}, "freq": 60,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1688"}, "freq": 60, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_OUTCOME", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Last charge outcome code"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1692"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1692"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_MY_ROOM", "path": "Climate", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Cabin mode active while parked"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "16A1"}, "freq": 5,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "16A1"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CHG_P_PERMIT", "path": "Battery", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "kilowatts" }, "name": "Minimum permission power"}
   ]},
-{ "hdr": "745", "rax": "74D", "fcm1": true, "dbg": true, "cmd": {"22": "1738"}, "freq": 10,
+{ "hdr": "745", "rax": "74D", "fcm1": true, "cmd": {"22": "1738"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_SOC_745", "path": "Battery", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "State of charge, charging control"}
   ]},
@@ -133,7 +133,7 @@
     {"id": "SOLTERRA_HVBAT_CMU01_VOLT", "path": "Battery.Modules.01", "fmt": {           "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 01 voltage"},
     {"id": "SOLTERRA_HVBAT_CMU02_VOLT", "path": "Battery.Modules.02", "fmt": {"bix": 16, "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "HV battery module 02 voltage"}
   ]},
-{ "hdr": "747", "rax": "74F", "fcm1": true, "dbg": true, "cmd": {"22": "1D3E"}, "freq": 60,
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "1D3E"}, "freq": 60, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CAP_1", "path": "Battery", "fmt": {            "len": 16, "max": 655.35, "div": 100, "unit": "ampereHours" }, "name": "Full charge capacity 1"},
     {"id": "SOLTERRA_CAP_2", "path": "Battery", "fmt": {"bix": 16,  "len": 16, "max": 655.35, "div": 100, "unit": "ampereHours" }, "name": "Full charge capacity 2"},
@@ -144,7 +144,7 @@
     {"id": "SOLTERRA_CAP_7", "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 655.35, "div": 100, "unit": "ampereHours" }, "name": "Full charge capacity 7"},
     {"id": "SOLTERRA_CAP_8", "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 655.35, "div": 100, "unit": "ampereHours" }, "name": "Full charge capacity 8"}
   ]},
-{ "hdr": "747", "rax": "74F", "fcm1": true, "dbg": true, "cmd": {"22": "1F5B"}, "freq": 10,
+{ "hdr": "747", "rax": "74F", "fcm1": true, "cmd": {"22": "1F5B"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_SOC_747", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "State of charge, battery ECU"}
   ]},

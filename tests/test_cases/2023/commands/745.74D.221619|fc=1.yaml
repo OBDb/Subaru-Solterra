@@ -1,0 +1,9 @@
+command_id: 745.74D.221619|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_AC_A_LIMIT: 0
+    SOLTERRA_AC_P_TGT: 0
+    SOLTERRA_CHGR_OP: STANDBY
+  response: |-
+    74D1008621619800000
+    74D2180000000000000

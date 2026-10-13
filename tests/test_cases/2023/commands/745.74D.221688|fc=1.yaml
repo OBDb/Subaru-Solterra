@@ -1,0 +1,5 @@
+command_id: 745.74D.221688|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CHG_OUTCOME: 33
+  response: 74D0462168821

@@ -1,0 +1,5 @@
+command_id: 745.74D.221679|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_DC_STA_A_MAX: 0
+  response: 74D056216790000

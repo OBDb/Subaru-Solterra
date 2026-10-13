@@ -1,0 +1,5 @@
+command_id: 745.74D.221684|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_AC_OP: STOP
+  response: 74D0462168400
