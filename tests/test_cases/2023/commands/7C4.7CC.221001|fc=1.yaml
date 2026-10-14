@@ -1,0 +1,29 @@
+command_id: 7C4.7CC.221001|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CABIN_T: 18.62
+  response: 7CC056210010746
+- expected_values:
+    SOLTERRA_CABIN_T: 18.64
+  response: 7CC056210010748
+- expected_values:
+    SOLTERRA_CABIN_T: 18.69
+  response: 7CC05621001074D
+- expected_values:
+    SOLTERRA_CABIN_T: 18.74
+  response: 7CC056210010752
+- expected_values:
+    SOLTERRA_CABIN_T: 18.78
+  response: 7CC056210010756
+- expected_values:
+    SOLTERRA_CABIN_T: 18.83
+  response: 7CC05621001075B
+- expected_values:
+    SOLTERRA_CABIN_T: 18.87
+  response: 7CC05621001075F
+- expected_values:
+    SOLTERRA_CABIN_T: 18.93
+  response: 7CC056210010765
+- expected_values:
+    SOLTERRA_CABIN_T: 19.3
+  response: 7CC05621001078A

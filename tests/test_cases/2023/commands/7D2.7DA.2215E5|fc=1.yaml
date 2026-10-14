@@ -1,0 +1,5 @@
+command_id: 7D2.7DA.2215E5|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_12V_CAP: 34
+  response: 7DA046215E544

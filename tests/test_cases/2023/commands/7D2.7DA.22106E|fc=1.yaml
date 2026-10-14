@@ -1,0 +1,11 @@
+command_id: 7D2.7DA.22106E|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_HVAC_P: 0
+  response: 7DA0462106E00
+- expected_values:
+    SOLTERRA_HVAC_P: 0.3
+  response: 7DA0462106E06
+- expected_values:
+    SOLTERRA_HVAC_P: 0.35
+  response: 7DA0462106E07

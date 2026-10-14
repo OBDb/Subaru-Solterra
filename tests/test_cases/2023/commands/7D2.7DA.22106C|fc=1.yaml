@@ -1,6 +1,10 @@
 command_id: 7D2.7DA.22106C|fc=1
 test_cases:
 - expected_values:
+    SOLTERRA_HVBAT_SOC_MAX: 76.5
+    SOLTERRA_HVBAT_SOC_MIN: 76
+  response: 7DA0662106C999998
+- expected_values:
     SOLTERRA_HVBAT_SOC_MAX: 85.5
     SOLTERRA_HVBAT_SOC_MIN: 83.5
   response: 7DA0662106CABABA7

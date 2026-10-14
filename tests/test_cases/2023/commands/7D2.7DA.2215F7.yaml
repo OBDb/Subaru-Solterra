@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_12V_C: 0.50744
   response: 7DA056215F78085
+- expected_values:
+    SOLTERRA_12V_C: 2.34994
+  response: 7DA056215F78268
