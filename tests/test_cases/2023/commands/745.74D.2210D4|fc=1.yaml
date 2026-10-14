@@ -1,5 +1,23 @@
 command_id: 745.74D.2210D4|fc=1
 test_cases:
 - expected_values:
+    SOLTERRA_CHG_P: -2.81
+  response: 74D056210D47EE7
+- expected_values:
+    SOLTERRA_CHG_P: -1.98
+  response: 74D056210D47F3A
+- expected_values:
+    SOLTERRA_CHG_P: -1.79
+  response: 74D056210D47F4D
+- expected_values:
+    SOLTERRA_CHG_P: -1.71
+  response: 74D056210D47F55
+- expected_values:
+    SOLTERRA_CHG_P: -0.87
+  response: 74D056210D47FA9
+- expected_values:
     SOLTERRA_CHG_P: -0.35
   response: 74D056210D47FDD
+- expected_values:
+    SOLTERRA_CHG_P: -0.34
+  response: 74D056210D47FDE

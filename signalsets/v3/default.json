@@ -201,38 +201,38 @@
   "signals": [
     {"id": "SOLTERRA_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
   ]},
-{ "hdr": "7B0", "rax": "7B8", "fcm1": true, "dbg": true, "cmd": {"22": "1045"}, "freq": 5,
+{ "hdr": "7B0", "rax": "7B8", "fcm1": true, "cmd": {"22": "1045"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_EPB", "path": "Brakes", "name": "Parking brake actuator status", "fmt": {"len": 8, "map": {
           "0": { "description": "Applied", "value": "APPLIED" }
         }}
     }
   ]},
-{ "hdr": "7B0", "rax": "7B8", "fcm1": true, "dbg": true, "cmd": {"22": "104C"}, "freq": 1,
+{ "hdr": "7B0", "rax": "7B8", "fcm1": true, "cmd": {"22": "104C"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_BRAKE_STROKE", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "millimeters" }, "name": "Brake pedal stroke"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "dbg": true, "cmd": {"22": "1001"}, "freq": 10,
+{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "cmd": {"22": "1001"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_CABIN_T", "path": "Climate", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "celsius" }, "name": "Cabin temperature"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "dbg": true, "cmd": {"22": "1002"}, "freq": 10,
+{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "cmd": {"22": "1002"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AAT_7C4", "path": "Climate", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "celsius" }, "name": "Ambient temperature, climate"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "dbg": true, "cmd": {"22": "1036"}, "freq": 10,
+{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "cmd": {"22": "1036"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_HVAC_SET_RAW", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Climate set point code"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "dbg": true, "cmd": {"22": "1086"}, "freq": 10,
+{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "cmd": {"22": "1086"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_HEATER_RAW", "path": "Climate", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Electric heater power count"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "dbg": true, "cmd": {"22": "2801"}, "freq": 10,
+{ "hdr": "7C4", "rax": "7CC", "fcm1": true, "cmd": {"22": "2801"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_BLOWER", "path": "Climate", "fmt": { "len": 8, "max": 7, "unit": "scalar" }, "name": "Blower level"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "0103"}, "freq": 10,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_ODO_7D2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
@@ -255,11 +255,11 @@
   "signals": [
     {"id": "SOLTERRA_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "1060"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1060"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_APP", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "1061"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1061"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_SHIFT", "path": "Transmission", "name": "Shift position", "fmt": {"len": 8, "map": {
           "0": { "description": "Park",    "value": "P" },
@@ -274,7 +274,7 @@
     {"id": "SOLTERRA_HVBAT_SOC_MAX", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Maximum HV battery charge"},
     {"id": "SOLTERRA_HVBAT_SOC_MIN", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Minimum HV battery charge"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106E"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "106E"}, "freq": 5, "dbgfilter": { "from": 2025 },
   "signals": [
     {"id": "SOLTERRA_HVAC_P", "path": "Climate", "fmt": { "len": 8, "max": 12.75, "div": 20, "unit": "kilowatts" }, "name": "Climate power"}
   ]},
@@ -285,11 +285,11 @@
     {"id": "SOLTERRA_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "SOLTERRA_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "1076"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1076"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_READY", "path": "Drivetrain", "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "noyes" }, "name": "Ready to drive"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "1087"}, "freq": 5,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1087"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AWD_MODE", "path": "Drivetrain", "name": "All-wheel drive mode", "fmt": {"bix": 8, "len": 8, "map": {
           "0": { "description": "Normal",                "value": "NORMAL" },
@@ -305,7 +305,7 @@
     {"id": "SOLTERRA_RPM", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor RPM"},
     {"id": "SOLTERRA_TQ",  "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "10A2"}, "freq": 0.25,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "10A2"}, "freq": 0.25, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "newtonMeters" }, "name": "Rear motor torque, requested"},
     {"id": "SOLTERRA_RM_TQ",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Rear motor torque"}
@@ -319,11 +319,11 @@
   "signals": [
     {"id": "SOLTERRA_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "15E5"}, "freq": 60,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "15E5"}, "freq": 60, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_12V_CAP", "path": "Electrical", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "ampereHours" }, "name": "12V battery full charge capacity"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "15E8"}, "freq": 60,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "15E8"}, "freq": 60, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_12V_AH_IN",   "path": "Electrical", "fmt": {           "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "12V battery charge, total"},
     {"id": "SOLTERRA_12V_AH_OUT",  "path": "Electrical", "fmt": {"bix": 32, "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "12V battery discharge, total"},
@@ -345,7 +345,7 @@
   "signals": [
     {"id": "SOLTERRA_HVBAT_CHRG_V", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "volts" }, "name": "HV battery charge voltage"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1829"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1829"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_HVBAT_MAX_T", "path": "Battery", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "HV battery maximum temperature"}
   ]},
@@ -361,7 +361,7 @@
   "signals": [
     {"id": "SOLTERRA_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "dbg": true, "cmd": {"22": "1F46"}, "freq": 1,
+{ "hdr": "7D2", "rax": "7DA", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_AAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
@@ -382,7 +382,7 @@
     {"id": "SOLTERRA_HVBAT_V", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 1023,                   "mul": 156.25, "div": 10000,               "unit": "volts" }, "name": "HV battery voltage"},
     {"id": "SOLTERRA_HVBAT_C", "path": "Battery", "fmt": {"bix": 32, "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,    "sign": true, "unit": "amps"  }, "name": "HV battery current"}
   ]},
-{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "dbg": true, "cmd": {"22": "1FA6"}, "freq": 10,
+{ "hdr": "7D2", "rax": "7DA", "fcm1": true, "cmd": {"22": "1FA6"}, "freq": 10, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SOLTERRA_ODO_1FA6", "path": "Trips", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]}

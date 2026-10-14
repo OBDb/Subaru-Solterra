@@ -1,0 +1,14 @@
+command_id: 7C4.7CC.221086|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_HEATER_RAW: 0
+  response: 7CC056210860000
+- expected_values:
+    SOLTERRA_HEATER_RAW: 3343
+  response: 7CC056210860D0F
+- expected_values:
+    SOLTERRA_HEATER_RAW: 6683
+  response: 7CC056210861A1B
+- expected_values:
+    SOLTERRA_HEATER_RAW: 7968
+  response: 7CC056210861F20
