@@ -1,0 +1,5 @@
+command_id: 7D2.7DA.221087|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_AWD_MODE: NORMAL
+  response: 7DA056210870000

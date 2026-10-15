@@ -1,0 +1,5 @@
+command_id: 745.74D.2216A1|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CHG_P_PERMIT: -327.68
+  response: 74D056216A18000

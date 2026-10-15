@@ -1,0 +1,5 @@
+command_id: 745.74D.22161C|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_CHG_V_TYPE: NONE
+  response: 74D0462161C00

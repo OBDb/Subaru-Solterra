@@ -1,0 +1,14 @@
+command_id: 7D2.7DA.2215F8
+test_cases:
+- expected_values:
+    SOLTERRA_12V_T: 21.9
+  response: 7DA056215F8026B
+- expected_values:
+    SOLTERRA_12V_T: 22
+  response: 7DA056215F8026C
+- expected_values:
+    SOLTERRA_12V_T: 22.1
+  response: 7DA056215F8026D
+- expected_values:
+    SOLTERRA_12V_T: 22.5
+  response: 7DA056215F80271

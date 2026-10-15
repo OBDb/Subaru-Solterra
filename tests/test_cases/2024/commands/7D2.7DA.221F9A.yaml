@@ -1,0 +1,20 @@
+command_id: 7D2.7DA.221F9A
+test_cases:
+- expected_values:
+    SOLTERRA_HVBAT_C: 1.2
+    SOLTERRA_HVBAT_V: 362
+  response: |-
+    7DA1009621F9A0E005A
+    7DA2180000C00000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 2
+    SOLTERRA_HVBAT_V: 362
+  response: |-
+    7DA1009621F9A0E005A
+    7DA2180001400000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 2.3
+    SOLTERRA_HVBAT_V: 362
+  response: |-
+    7DA1009621F9A0E005A
+    7DA2180001700000000

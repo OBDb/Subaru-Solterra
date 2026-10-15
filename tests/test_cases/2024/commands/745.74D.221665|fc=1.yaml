@@ -1,0 +1,5 @@
+command_id: 745.74D.221665|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_AC_P_USABLE: 0
+  response: 74D0462166500
