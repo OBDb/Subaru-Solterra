@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.221002|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_AAT_7C4: 19.44
-  response: 7CC056210020798
+    SOLTERRA_AAT_7C4: 18.08
+  response: 7CC056210020710
 - expected_values:
     SOLTERRA_AAT_7C4: 20.01
   response: 7CC0562100207D1

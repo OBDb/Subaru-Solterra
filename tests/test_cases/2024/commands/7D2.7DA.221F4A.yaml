@@ -3,3 +3,15 @@ test_cases:
 - expected_values:
     SOLTERRA_ACC_PEDAL_POS_2: 31.76471
   response: 7DA04621F4A51
+- expected_values:
+    SOLTERRA_ACC_PEDAL_POS_2: 34.11765
+  response: 7DA04621F4A57
+- expected_values:
+    SOLTERRA_ACC_PEDAL_POS_2: 52.94118
+  response: 7DA04621F4A87
+- expected_values:
+    SOLTERRA_ACC_PEDAL_POS_2: 56.47059
+  response: 7DA04621F4A90
+- expected_values:
+    SOLTERRA_ACC_PEDAL_POS_2: 58.03922
+  response: 7DA04621F4A94

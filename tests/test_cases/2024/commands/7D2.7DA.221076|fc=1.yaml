@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_READY: 1
   response: 7DA056210760F03
+- expected_values:
+    SOLTERRA_READY: 1
+  response: 7DA056210760F07

@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     SOLTERRA_HEATER_RAW: 0
   response: 7CC056210860000
+- expected_values:
+    SOLTERRA_HEATER_RAW: 6426
+  response: 7CC05621086191A
+- expected_values:
+    SOLTERRA_HEATER_RAW: 7453
+  response: 7CC056210861D1D

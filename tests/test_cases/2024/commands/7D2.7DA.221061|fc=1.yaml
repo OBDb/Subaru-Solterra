@@ -6,3 +6,9 @@ test_cases:
 - expected_values:
     SOLTERRA_SHIFT: P
   response: 7DA056210610001
+- expected_values:
+    SOLTERRA_SHIFT: R
+  response: 7DA056210610202
+- expected_values:
+    SOLTERRA_SHIFT: D
+  response: 7DA056210610608
