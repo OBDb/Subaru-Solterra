@@ -1,0 +1,5 @@
+command_id: 745.74D.221669|fc=1
+test_cases:
+- expected_values:
+    SOLTERRA_PISW: 0
+  response: 74D0462166900
