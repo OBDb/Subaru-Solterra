@@ -6,3 +6,9 @@ test_cases:
   response: |-
     7DA100C6210A1800080
     7DA2100020080000400
+- expected_values:
+    SOLTERRA_RPM: 0
+    SOLTERRA_TQ: 2.625
+  response: |-
+    7DA100C6210A1800080
+    7DA2118020080150400
