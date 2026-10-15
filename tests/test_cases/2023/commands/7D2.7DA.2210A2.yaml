@@ -7,6 +7,12 @@ test_cases:
     7DA100C6210A2800080
     7DA21000C0080000000
 - expected_values:
+    SOLTERRA_RM_TQ: 2.125
+    SOLTERRA_RM_TQ_REQ: 0
+  response: |-
+    7DA100C6210A2800080
+    7DA2114020080110400
+- expected_values:
     SOLTERRA_RM_TQ: -22.375
     SOLTERRA_RM_TQ_REQ: 2
   response: |-
