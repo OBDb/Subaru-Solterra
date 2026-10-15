@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.221001|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_CABIN_T: 25.67
-  response: 7CC056210010A07
+    SOLTERRA_CABIN_T: 22.39
+  response: 7CC0562100108BF
 - expected_values:
     SOLTERRA_CABIN_T: 28.13
   response: 7CC056210010AFD

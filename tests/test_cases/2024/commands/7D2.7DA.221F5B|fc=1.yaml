@@ -1,6 +1,9 @@
 command_id: 7D2.7DA.221F5B|fc=1
 test_cases:
 - expected_values:
+    SOLTERRA_HVBAT_SOC: 56.47059
+  response: 7DA04621F5B90
+- expected_values:
     SOLTERRA_HVBAT_SOC: 56.86275
   response: 7DA04621F5B91
 - expected_values:

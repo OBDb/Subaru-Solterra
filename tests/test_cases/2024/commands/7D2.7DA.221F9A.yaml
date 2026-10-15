@@ -1,6 +1,24 @@
 command_id: 7D2.7DA.221F9A
 test_cases:
 - expected_values:
+    SOLTERRA_HVBAT_C: 144.8
+    SOLTERRA_HVBAT_V: 354
+  response: |-
+    7DA1009621F9A0E0058
+    7DA218005A800000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 123.2
+    SOLTERRA_HVBAT_V: 355
+  response: |-
+    7DA1009621F9A0E0058
+    7DA21C004D000000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 119.9
+    SOLTERRA_HVBAT_V: 356
+  response: |-
+    7DA1009621F9A0E0059
+    7DA210004AF00000000
+- expected_values:
     SOLTERRA_HVBAT_C: 1.2
     SOLTERRA_HVBAT_V: 362
   response: |-
@@ -18,3 +36,15 @@ test_cases:
   response: |-
     7DA1009621F9A0E005A
     7DA2180001700000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 6.4
+    SOLTERRA_HVBAT_V: 362
+  response: |-
+    7DA1009621F9A0E005A
+    7DA2180004000000000
+- expected_values:
+    SOLTERRA_HVBAT_C: 8.2
+    SOLTERRA_HVBAT_V: 362
+  response: |-
+    7DA1009621F9A0E005A
+    7DA2180005200000000

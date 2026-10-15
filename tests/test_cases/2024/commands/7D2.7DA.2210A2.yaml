@@ -1,6 +1,12 @@
 command_id: 7D2.7DA.2210A2
 test_cases:
 - expected_values:
+    SOLTERRA_RM_TQ: -17.875
+    SOLTERRA_RM_TQ_REQ: -81
+  response: |-
+    7DA100C6210A27FAF7F
+    7DA217202007F710400
+- expected_values:
     SOLTERRA_RM_TQ: 0
     SOLTERRA_RM_TQ_REQ: 0
   response: |-
@@ -12,3 +18,27 @@ test_cases:
   response: |-
     7DA100C6210A2800080
     7DA21000C0080010000
+- expected_values:
+    SOLTERRA_RM_TQ: 14.875
+    SOLTERRA_RM_TQ_REQ: 0
+  response: |-
+    7DA100C6210A2800080
+    7DA217F020080770400
+- expected_values:
+    SOLTERRA_RM_TQ: 53
+    SOLTERRA_RM_TQ_REQ: 3900
+  response: |-
+    7DA100C6210A28F3C81
+    7DA21B00A0381A80400
+- expected_values:
+    SOLTERRA_RM_TQ: 42.625
+    SOLTERRA_RM_TQ_REQ: 4344
+  response: |-
+    7DA100C6210A290F881
+    7DA21430A0381550400
+- expected_values:
+    SOLTERRA_RM_TQ: 34.875
+    SOLTERRA_RM_TQ_REQ: 4774
+  response: |-
+    7DA100C6210A292A681
+    7DA21110A0381170400
