@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     SOLTERRA_HVBAT_SOC_DISPLAY: 66
   response: 74D0462173942
+- expected_values:
+    SOLTERRA_HVBAT_SOC_DISPLAY: 76
+  response: 74D046217394C
