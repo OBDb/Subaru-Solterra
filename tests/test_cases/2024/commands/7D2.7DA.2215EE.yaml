@@ -5,4 +5,4 @@ test_cases:
   response: 7DA056215EE28F2
 - expected_values:
     SOLTERRA_12V_V: 14.1641
-  response: 7DA056215EE2D20
+  response: 7DA056215EE2D1A

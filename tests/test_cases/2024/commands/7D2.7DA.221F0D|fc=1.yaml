@@ -18,3 +18,6 @@ test_cases:
 - expected_values:
     SOLTERRA_VSS: 37
   response: 7DA04621F0D25
+- expected_values:
+    SOLTERRA_VSS: 41
+  response: 7DA04621F0D29
