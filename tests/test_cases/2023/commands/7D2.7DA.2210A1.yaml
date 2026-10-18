@@ -12,3 +12,51 @@ test_cases:
   response: |-
     7DA100C6210A1800080
     7DA2118020080150400
+- expected_values:
+    SOLTERRA_RPM: 1113
+    SOLTERRA_TQ: -35
+  response: |-
+    7DA100C6210A184597E
+    7DA21F902007EE80400
+- expected_values:
+    SOLTERRA_RPM: 1935
+    SOLTERRA_TQ: 54.625
+  response: |-
+    7DA100C6210A1878F81
+    7DA21A9020081B50400
+- expected_values:
+    SOLTERRA_RPM: 2281
+    SOLTERRA_TQ: -7.375
+  response: |-
+    7DA100C6210A188E97F
+    7DA21C102007FC50400
+- expected_values:
+    SOLTERRA_RPM: 5718
+    SOLTERRA_TQ: -4.625
+  response: |-
+    7DA100C6210A196567F
+    7DA21D70A037FDB0400
+- expected_values:
+    SOLTERRA_RPM: 6666
+    SOLTERRA_TQ: 12.5
+  response: |-
+    7DA100C6210A19A0A80
+    7DA21610A0380640400
+- expected_values:
+    SOLTERRA_RPM: 6919
+    SOLTERRA_TQ: 11.125
+  response: |-
+    7DA100C6210A19B0780
+    7DA21530A0380590400
+- expected_values:
+    SOLTERRA_RPM: 7070
+    SOLTERRA_TQ: 11.125
+  response: |-
+    7DA100C6210A19B9E80
+    7DA215A0A0380590400
+- expected_values:
+    SOLTERRA_RPM: 7798
+    SOLTERRA_TQ: -1.875
+  response: |-
+    7DA100C6210A19E767F
+    7DA21EE0A037FF10400
