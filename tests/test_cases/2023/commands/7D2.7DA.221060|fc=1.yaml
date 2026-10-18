@@ -6,3 +6,15 @@ test_cases:
 - expected_values:
     SOLTERRA_APP: 3
   response: 7DA0462106006
+- expected_values:
+    SOLTERRA_APP: 8
+  response: 7DA0462106010
+- expected_values:
+    SOLTERRA_APP: 25.5
+  response: 7DA0462106033
+- expected_values:
+    SOLTERRA_APP: 26.5
+  response: 7DA0462106035
+- expected_values:
+    SOLTERRA_APP: 33
+  response: 7DA0462106042

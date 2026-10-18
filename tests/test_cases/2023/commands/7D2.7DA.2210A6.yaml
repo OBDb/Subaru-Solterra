@@ -6,8 +6,28 @@ test_cases:
   response: 7DA066210A62F3337
 - expected_values:
     SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 25
+  response: 7DA066210A6414E53
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
     SOLTERRA_RM_INVRT_COOL_T: 26
   response: 7DA066210A6424453
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 26
+  response: 7DA066210A6424E53
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 28
+  response: 7DA066210A6444E53
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 29
+  response: 7DA066210A6454E53
+- expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 35
+  response: 7DA066210A64B4E53
 - expected_values:
     SOLTERRA_M_INVRT_MAX_T: 67
     SOLTERRA_RM_INVRT_COOL_T: 38
