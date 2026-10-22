@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     SOLTERRA_CABIN_T: 19.3
   response: 7CC05621001078A
+- expected_values:
+    SOLTERRA_CABIN_T: 24.46
+  response: 7CC05621001098E

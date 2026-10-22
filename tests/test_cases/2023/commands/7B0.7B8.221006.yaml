@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     SOLTERRA_MASTER_CYL_TEMP: 21
   response: 7B8056210066500
+- expected_values:
+    SOLTERRA_MASTER_CYL_TEMP: 31
+  response: 7B8056210066F00

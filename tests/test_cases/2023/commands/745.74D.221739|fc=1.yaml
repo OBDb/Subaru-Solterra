@@ -1,8 +1,8 @@
 command_id: 745.74D.221739|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 79
-  response: 74D046217394F
+    SOLTERRA_HVBAT_SOC_DISPLAY: 78
+  response: 74D046217394E
 - expected_values:
     SOLTERRA_HVBAT_SOC_DISPLAY: 90
   response: 74D046217395A

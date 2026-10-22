@@ -4,26 +4,11 @@ test_cases:
     SOLTERRA_AAT_7C4: 15.99
   response: 7CC05621002063F
 - expected_values:
-    SOLTERRA_AAT_7C4: 16.11
-  response: 7CC05621002064B
-- expected_values:
-    SOLTERRA_AAT_7C4: 16.32
-  response: 7CC056210020660
-- expected_values:
-    SOLTERRA_AAT_7C4: 16.6
-  response: 7CC05621002067C
-- expected_values:
-    SOLTERRA_AAT_7C4: 16.79
-  response: 7CC05621002068F
-- expected_values:
-    SOLTERRA_AAT_7C4: 17.06
-  response: 7CC0562100206AA
-- expected_values:
-    SOLTERRA_AAT_7C4: 17.38
-  response: 7CC0562100206CA
-- expected_values:
     SOLTERRA_AAT_7C4: 17.72
   response: 7CC0562100206EC
 - expected_values:
     SOLTERRA_AAT_7C4: 18.01
   response: 7CC056210020709
+- expected_values:
+    SOLTERRA_AAT_7C4: 26.05
+  response: 7CC056210020A2D

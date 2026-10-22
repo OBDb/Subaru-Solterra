@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     SOLTERRA_BRAKE_STROKE: 1
   response: 7B80462104C01
+- expected_values:
+    SOLTERRA_BRAKE_STROKE: 32
+  response: 7B80462104C20
