@@ -15,3 +15,6 @@ test_cases:
 - expected_values:
     SOLTERRA_INVRT_COOLANT_T: 31
   response: 7DA046210B247
+- expected_values:
+    SOLTERRA_INVRT_COOLANT_T: 32
+  response: 7DA046210B248

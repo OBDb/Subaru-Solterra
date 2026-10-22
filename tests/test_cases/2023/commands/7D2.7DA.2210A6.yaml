@@ -29,6 +29,10 @@ test_cases:
     SOLTERRA_RM_INVRT_COOL_T: 35
   response: 7DA066210A64B4E53
 - expected_values:
+    SOLTERRA_M_INVRT_MAX_T: 43
+    SOLTERRA_RM_INVRT_COOL_T: 38
+  response: 7DA066210A64E5253
+- expected_values:
     SOLTERRA_M_INVRT_MAX_T: 67
     SOLTERRA_RM_INVRT_COOL_T: 38
   response: 7DA066210A64E566B

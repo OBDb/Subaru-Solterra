@@ -5,4 +5,28 @@ test_cases:
   response: 7DA056215EE2B90
 - expected_values:
     SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C72
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C74
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
   response: 7DA056215EE2C7A
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C7C
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C7E
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C80
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C82
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C84
+- expected_values:
+    SOLTERRA_12V_V: 13.84962
+  response: 7DA056215EE2C88
