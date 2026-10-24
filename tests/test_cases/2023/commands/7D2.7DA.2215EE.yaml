@@ -1,32 +1,14 @@
 command_id: 7D2.7DA.2215EE
 test_cases:
 - expected_values:
-    SOLTERRA_12V_V: 13.53514
-  response: 7DA056215EE2B90
+    SOLTERRA_12V_V: 12.5917
+  response: 7DA056215EE28EC
 - expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C72
+    SOLTERRA_12V_V: 12.5917
+  response: 7DA056215EE28FE
 - expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C74
+    SOLTERRA_12V_V: 12.90618
+  response: 7DA056215EE2900
 - expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C7A
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C7C
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C7E
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C80
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C82
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C84
-- expected_values:
-    SOLTERRA_12V_V: 13.84962
-  response: 7DA056215EE2C88
+    SOLTERRA_12V_V: 14.1641
+  response: 7DA056215EE2D42
