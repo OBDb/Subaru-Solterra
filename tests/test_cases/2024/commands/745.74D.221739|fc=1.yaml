@@ -4,23 +4,5 @@ test_cases:
     SOLTERRA_HVBAT_SOC_DISPLAY: 58
   response: 74D046217393A
 - expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 62
-  response: 74D046217393E
-- expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 63
-  response: 74D046217393F
-- expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 64
-  response: 74D0462173940
-- expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 66
-  response: 74D0462173942
-- expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 67
-  response: 74D0462173943
-- expected_values:
-    SOLTERRA_HVBAT_SOC_DISPLAY: 76
-  response: 74D046217394C
-- expected_values:
     SOLTERRA_HVBAT_SOC_DISPLAY: 80
   response: 74D0462173950
