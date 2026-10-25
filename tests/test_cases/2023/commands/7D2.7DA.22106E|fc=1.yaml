@@ -15,3 +15,18 @@ test_cases:
 - expected_values:
     SOLTERRA_HVAC_P: 0.45
   response: 7DA0462106E09
+- expected_values:
+    SOLTERRA_HVAC_P: 0.5
+  response: 7DA0462106E0A
+- expected_values:
+    SOLTERRA_HVAC_P: 0.65
+  response: 7DA0462106E0D
+- expected_values:
+    SOLTERRA_HVAC_P: 0.75
+  response: 7DA0462106E0F
+- expected_values:
+    SOLTERRA_HVAC_P: 0.8
+  response: 7DA0462106E10
+- expected_values:
+    SOLTERRA_HVAC_P: 0.9
+  response: 7DA0462106E12
