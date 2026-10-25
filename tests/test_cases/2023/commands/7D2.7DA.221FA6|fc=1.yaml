@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     SOLTERRA_ODO_1FA6: 69226.6
   response: 7DA07621FA6000A902A
+- expected_values:
+    SOLTERRA_ODO_1FA6: 69274.6
+  response: 7DA07621FA6000A920A

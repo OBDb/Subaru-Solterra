@@ -25,6 +25,14 @@ test_cases:
     7582A10086210043C3C
     7582A213C3D00000000
 - expected_values:
+    SOLTERRA_TT_1: 20
+    SOLTERRA_TT_2: 20
+    SOLTERRA_TT_3: 21
+    SOLTERRA_TT_4: 21
+  response: |-
+    7582A10086210043C3C
+    7582A213D3D00000000
+- expected_values:
     SOLTERRA_TT_1: 30
     SOLTERRA_TT_2: 29
     SOLTERRA_TT_3: 30

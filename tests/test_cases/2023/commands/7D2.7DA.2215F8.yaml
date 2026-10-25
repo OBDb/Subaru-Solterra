@@ -4,6 +4,18 @@ test_cases:
     SOLTERRA_12V_T: 11.8
   response: 7DA056215F80206
 - expected_values:
+    SOLTERRA_12V_T: 16.1
+  response: 7DA056215F80231
+- expected_values:
+    SOLTERRA_12V_T: 16.3
+  response: 7DA056215F80233
+- expected_values:
+    SOLTERRA_12V_T: 16.4
+  response: 7DA056215F80234
+- expected_values:
+    SOLTERRA_12V_T: 16.5
+  response: 7DA056215F80235
+- expected_values:
     SOLTERRA_12V_T: 21.9
   response: 7DA056215F8026B
 - expected_values:
