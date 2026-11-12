@@ -1,6 +1,12 @@
 command_id: 7D2.7DA.221F9A
 test_cases:
 - expected_values:
+    SOLTERRA_HVBAT_C: 9.7
+    SOLTERRA_HVBAT_V: 354
+  response: |-
+    7DA1009621F9A0E0058
+    7DA2180006100000000
+- expected_values:
     SOLTERRA_HVBAT_C: 144.8
     SOLTERRA_HVBAT_V: 354
   response: |-

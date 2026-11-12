@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_BLOWER: 1
   response: 7CC0462280101
+- expected_values:
+    SOLTERRA_BLOWER: 6
+  response: 7CC0462280106

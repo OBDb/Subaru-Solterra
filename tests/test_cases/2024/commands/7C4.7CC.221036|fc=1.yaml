@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_HVAC_SET_RAW: 41
   response: 7CC0462103629
+- expected_values:
+    SOLTERRA_HVAC_SET_RAW: 44
+  response: 7CC046210362C

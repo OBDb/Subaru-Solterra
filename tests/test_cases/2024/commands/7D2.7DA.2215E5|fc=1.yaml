@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_12V_CAP: 31
   response: 7DA046215E53E
+- expected_values:
+    SOLTERRA_12V_CAP: 36.5
+  response: 7DA046215E549

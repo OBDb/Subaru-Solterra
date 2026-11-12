@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_ODO: 11658
   response: 74F0762010302002D8A
+- expected_values:
+    SOLTERRA_ODO: 15314
+  response: 74F0762010302003BD2
