@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_DRIVE_MODE: NORMAL
   response: 7DA0462100400
+- expected_values:
+    SOLTERRA_DRIVE_MODE: ECO
+  response: 7DA0462100406

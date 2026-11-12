@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     SOLTERRA_CHG_P: -41.78
   response: 74D056210D46FAE
+- expected_values:
+    SOLTERRA_CHG_P: -3.18
+  response: 74D056210D47EC2
+- expected_values:
+    SOLTERRA_CHG_P: -2.7
+  response: 74D056210D47EF2

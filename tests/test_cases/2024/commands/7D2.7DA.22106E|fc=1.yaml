@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_HVAC_P: 0
   response: 7DA0462106E00
+- expected_values:
+    SOLTERRA_HVAC_P: 0.75
+  response: 7DA0462106E0F
