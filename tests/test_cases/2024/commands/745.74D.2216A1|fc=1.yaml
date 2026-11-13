@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     SOLTERRA_CHG_P_PERMIT: -327.68
   response: 74D056216A18000
+- expected_values:
+    SOLTERRA_CHG_P_PERMIT: -51.28
+  response: 74D056216A1EBF8
+- expected_values:
+    SOLTERRA_CHG_P_PERMIT: -35.77
+  response: 74D056216A1F207

@@ -4,6 +4,9 @@ test_cases:
     SOLTERRA_AAT: 7
   response: 7DA04621F462F
 - expected_values:
+    SOLTERRA_AAT: 10
+  response: 7DA04621F4632
+- expected_values:
     SOLTERRA_AAT: 18
   response: 7DA04621F463A
 - expected_values:

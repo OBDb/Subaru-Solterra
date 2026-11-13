@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_AC_P_USABLE: 0
   response: 74D0462166500
+- expected_values:
+    SOLTERRA_AC_P_USABLE: 2.54
+  response: 74D04621665FE

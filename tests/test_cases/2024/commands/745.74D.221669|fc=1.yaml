@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_PISW: 0
   response: 74D0462166900
+- expected_values:
+    SOLTERRA_PISW: 3
+  response: 74D0462166903

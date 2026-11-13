@@ -4,5 +4,5 @@ test_cases:
     SOLTERRA_HVBAT_MAX_T: 15
   response: 7DA056218294100
 - expected_values:
-    SOLTERRA_HVBAT_MAX_T: 18
-  response: 7DA056218294400
+    SOLTERRA_HVBAT_MAX_T: 39
+  response: 7DA056218295900

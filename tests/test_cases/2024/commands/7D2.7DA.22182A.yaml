@@ -4,8 +4,5 @@ test_cases:
     SOLTERRA_HVBAT_MIN_T: 13
   response: 7DA0562182A3F00
 - expected_values:
-    SOLTERRA_HVBAT_MIN_T: 17
-  response: 7DA0562182A4300
-- expected_values:
-    SOLTERRA_HVBAT_MIN_T: 18
-  response: 7DA0562182A4400
+    SOLTERRA_HVBAT_MIN_T: 34
+  response: 7DA0562182A5400

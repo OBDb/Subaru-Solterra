@@ -1,11 +1,8 @@
 command_id: 747.74F.221F5B|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_SOC_747: 51.76471
-  response: 74F04621F5B84
+    SOLTERRA_SOC_747: 23.13725
+  response: 74F04621F5B3B
 - expected_values:
-    SOLTERRA_SOC_747: 56.86275
-  response: 74F04621F5B91
-- expected_values:
-    SOLTERRA_SOC_747: 57.2549
-  response: 74F04621F5B92
+    SOLTERRA_SOC_747: 90.58824
+  response: 74F04621F5BE7

@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_CTRL_MODE: DRIVING
   response: 74D046210D101
+- expected_values:
+    SOLTERRA_CTRL_MODE: CHARGING
+  response: 74D046210D103

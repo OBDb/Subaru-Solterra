@@ -1,8 +1,8 @@
 command_id: 745.74D.221738|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_SOC_745: 53
-  response: 74D0462173835
+    SOLTERRA_SOC_745: 22
+  response: 74D0462173816
 - expected_values:
-    SOLTERRA_SOC_745: 66
-  response: 74D0462173842
+    SOLTERRA_SOC_745: 92
+  response: 74D046217385C

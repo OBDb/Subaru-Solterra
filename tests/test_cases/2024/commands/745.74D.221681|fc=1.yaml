@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_DC_STA_V_MAX: 0
   response: 74D056216810000
+- expected_values:
+    SOLTERRA_DC_STA_V_MAX: 408
+  response: 74D056216810198
