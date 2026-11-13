@@ -4,5 +4,8 @@ test_cases:
     SOLTERRA_CHG_OUTCOME: 38
   response: 74D0462168826
 - expected_values:
+    SOLTERRA_CHG_OUTCOME: 48
+  response: 74D0462168830
+- expected_values:
     SOLTERRA_CHG_OUTCOME: 57
   response: 74D0462168839

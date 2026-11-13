@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     SOLTERRA_CHG_A_TGT: 0
   response: 74D0562166D0000
+- expected_values:
+    SOLTERRA_CHG_A_TGT: 183
+  response: 74D0562166D00B7
