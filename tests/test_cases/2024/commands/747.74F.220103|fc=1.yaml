@@ -1,8 +1,10 @@
 command_id: 747.74F.220103|fc=1
 test_cases:
 - expected_values:
-    SOLTERRA_ODO: 11658
+    SOLTERRA_ODO_RAW: 11658
+    SOLTERRA_ODO_UNIT: MI
   response: 74F0762010302002D8A
 - expected_values:
-    SOLTERRA_ODO: 15314
+    SOLTERRA_ODO_RAW: 15314
+    SOLTERRA_ODO_UNIT: MI
   response: 74F0762010302003BD2
